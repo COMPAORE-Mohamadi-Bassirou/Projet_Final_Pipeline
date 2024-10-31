@@ -43,9 +43,9 @@ def set_background(image_path):
 def load_excel_data_from_s3(bucket_name, file_key):
     s3 = boto3.client(
         's3',
-        aws_access_key_id = st.secrets["default"]["aws_access_key_id"],
-        aws_secret_access_key = st.secrets["default"]["aws_secret_access_key"],
-        region_name=st.secrets["Region"]["value"]
+        aws_access_key_id = st.secrets["aws_access_key_id"],
+        aws_secret_access_key = st.secrets["aws_secret_access_key"],
+        region_name=st.secrets["value"]
     )
     try:
         response = s3.get_object(Bucket=bucket_name, Key=file_key)
