@@ -64,8 +64,8 @@ file_key = "projet_List/donnees_imputees_knn_mondial.xlsx"
 excel_data = load_excel_data_from_s3(bucket_name, file_key)
 
 # Chemin des images (assurez-vous qu'elles soient dans le projet ou accessibles via une URL)
-background_image_comparer = "C:/Users/user/Desktop/ISE2/Mously/Projet_Final/image2.jpg"
-background_image_accueil = "C:/Users/user/Desktop/ISE2/Mously/Projet_Final/image3.jpg"
+background_image_comparer = "image2.jpg"
+background_image_accueil = "image3.jpg"
 
 # Navigation via la barre latérale
 st.sidebar.title("Navigation")
